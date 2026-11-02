@@ -65,3 +65,8 @@ console.log(a); //surt un error, ja que no es pot declarar una variable amb el m
 let a = 1; 
 let a = 2; 
 console.log(a); //surt un error, ja que no es pot declarar una variable amb el mateix nom amb let i let
+
+/*
+3.1.- Quines d'aquestes assignacions són correctes i quines no? Tracta cada assignació 
+com si fos independent. 
+*/
