@@ -51,3 +51,103 @@
 //taula[2] = parseFloat(numero1) * parseFloat(numero2);
 //taula[3] = parseFloat(numero1) / parseFloat(numero2);
 //console.log(taula);
+
+//21.6.- Donada aquesta taula: 
+//let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78]; 
+//Fes un programa que escrigui a la consola els valors situats a la primera i la darrera posició 
+//de la taula. 
+//***** 
+//Donada la definició d’aquesta taula: 
+//let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+
+//console.log(taula[0]);
+//console.log(taula[taula.length - 1]);
+
+//21.7.- Fes un programa que escrigui a la consola tots els valors emmagatzemats a la taula, un a un. 
+
+//let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+//for (let i = 0; i < taula.length; i++) {
+//    console.log(taula[i]);
+//}
+
+//21.8.- Fes un programa que escrigui a la consola la suma tots els valors emmagatzemats a la taula. 
+
+//let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+//let suma = 0;
+//for (let i = 0; i < taula.length; i++) {
+//    suma += taula[i];
+//}
+//console.log(suma);
+
+
+//21.9.- Fes un programa que crei una segona taula i emmagatzemi a ella tots els valors de la taula, tot sumant-los 25 (així les tres primeres posicions de la nova taula emmagatzemarien [48, 70, 88] Un cop fet haurà d’escriure la nova taula a la consola.
+
+//let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+//let novaTaula = [];
+//for (let i = 0; i < taula.length; i++) {
+//    novaTaula[i] = taula[i] + 25;
+//}
+//console.log(novaTaula);
+
+//21.10.- Fes un programa que calculi la mitjana dels valors emmagatzemats a la taula i l’escrigui a la consola (la mitjana es calcula sumant tots els valors i dividint pel nombre de valors). 
+
+//let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+//let suma = 0;
+//for (let i = 0; i < taula.length; i++) {
+//    suma += taula[i];
+//}
+//let mitjana = suma / taula.length;
+//console.log(mitjana);
+
+//21.11.- Fes un programa que calculi i escrigui a la consola els valors més gran i més petit de la taula. 
+
+//let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+//let max = taula[0];
+//let min = taula[0];
+//for (let i = 1; i < taula.length; i++) {
+//    if (taula[i] > max) {
+//        max = taula[i];
+//    }
+//    if (taula[i] < min) {
+//        min = taula[i];
+//    }
+//}
+//console.log("Valor més gran: " + max);
+//console.log("Valor més petit: " + min);
+
+//21.12.- Fes un programa que crei una nova taula on s’emmagatzemin només els valors parells de la taula i que escrigui el contingut d’aquesta nova taula a la consola.
+
+//let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+//let taulaParells = [];
+//for (let i = 0; i < taula.length; i++) {
+//    if (taula[i] % 2 === 0) {
+//        taulaParells.push(taula[i]);
+//    }
+//}
+//console.log(taulaParells);
+
+//21.13.- Fes un programa que demani a l’usuari un valor (fent servir prompt()) i escrigui a la consola quants cops apareix aquest valor a la taula. 
+
+//let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+//let valor = prompt("Introdueix un valor: ");
+//let comptador = 0;
+//for (let i = 0; i < taula.length; i++) {
+//    if (taula[i] === parseInt(valor)) {
+//        comptador++;
+//    }
+//}
+//console.log("El valor " + valor + " apareix " + comptador + " cops a la taula.");
+
+//21.14.- Fes un programa que, donats dos arrays de números, comprovi si tots dos tenen el mateix número d’elements i, si és així, crei una nova taula que contingui la suma de cada element que es trobi a la mateixa posició als dos arrys. 
+
+//let array1 = [1, 2, 3, 4, 5];
+//let array2 = [10, 20, 30, 40, 50];
+//if (array1.length === array2.length) {
+//    let sumaArray = [];
+//    for (let i = 0; i < array1.length; i++) {
+//        sumaArray[i] = array1[i] + array2[i];
+//    }
+//    console.log(sumaArray);
+//} else {
+//    console.log("Els arrays no tenen el mateix número d'elements.");
+//}
