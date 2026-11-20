@@ -219,3 +219,83 @@
 //}
 
 // 21.19.- Fes un programa que donades dues taules de la mateixa mida, crei una nova taula amb la unió de les dues taules de manera alterna. Per exemple: [1,2,3] unió [4,5,6] → [1,4,2,5,3,6]
+
+//let taula1 = [1, 2, 3];
+//let taula2 = [4, 5, 6];
+//let taulaUnida = [];
+//for (let i = 0; i < taula1.length; i++) {
+//    taulaUnida.push(taula1[i]);
+//    taulaUnida.push(taula2[i]);
+//}
+//console.log(taulaUnida);
+
+//21.20.- Fes un programa que, donada una taula i un valor, crei una nova taula sense el valor proporcionat. 
+
+//Exemple: [1,2,3,4,5] sense el valor 3 → [1,2,4,5]
+//let taula = [1, 2, 3, 4, 5];
+//let valor = parseInt(prompt("Introdueix un valor a eliminar: "));
+//let novaTaula = [];
+//for (let i = 0; i < taula.length; i++) {
+//    if (taula[i] !== valor) {
+//        novaTaula.push(taula[i]);
+//    }
+//}
+//console.log(novaTaula);
+
+//21.21.- Fes un programa que, donada una taula i una posició, guardi a una altra taula la taula inicial, però des de la posició donada fins al final. Per exemple [1,2,3,5,6,7,8,9,0] i 4 → [6,7,8,9,0] 
+
+//let taula = [1, 2, 3, 5, 6, 7, 8, 9, 0];
+//let posicio = parseInt(prompt("Introdueix una posició: "));
+//let novaTaula = [];
+//for (let i = posicio; i < taula.length; i++) {
+//    novaTaula.push(taula[i]);
+//}
+//console.log(novaTaula);
+
+//21.22.- Fes un programa que, donada una taula escrigui a la pantalla el primer número que estigui repetit.
+
+//let taula = [23, 45, 63, 78, 23, 68, 3, 78, 32, 53, 93, 21, 53, 5, 62, 78];
+//let primerRepetit = null;
+//for (let i = 0; i < taula.length; i++) {
+//    for (let j = i + 1; j < taula.length; j++) {
+//        if (taula[i] === taula[j]) {
+//            primerRepetit = taula[i];
+//            break;
+//        }
+//    }
+//    if (primerRepetit !== null) {
+//        break;
+//    }
+//}
+//if (primerRepetit !== null) {
+//    console.log("El primer número repetit és: " + primerRepetit);
+//} else {
+//    console.log("No hi ha números repetits a la taula.");
+//}
+
+//Exercici amb objectes 
+
+//Tenim aquesta definició de l’objecte cotxe i dues variables: 
+//function Auto(marca, modelo, potencia, antiguedad , precio) { 
+//this.marca = marca; 
+//this.modelo = modelo; 
+//this.potencia = potencia; 
+//this.antiguedad = antiguedad; 
+//this.precio = precio; 
+//} 
+
+//let miAuto = new Auto("Seat","Ibiza",90,2010,5000); 
+//let otroAuto = new Auto("Opel","Astra",92,1995,500); 
+
+//21.23.- Fes un programa que et digui el model i la marca del vehicle més antic.
+
+//let miAuto = new Auto("Seat", "Ibiza", 90, 2010, 5000);
+//let otroAuto = new Auto("Opel", "Astra", 92, 1995, 500);
+//let autos = [miAuto, otroAuto];
+//let autoMesAntic = autos[0];
+//for (let i = 1; i < autos.length; i++) {
+//    if (autos[i].antiguedad < autoMesAntic.antiguedad) {
+//        autoMesAntic = autos[i];
+//    }
+//}
+//console.log("El vehicle més antic és un " + autoMesAntic.marca + " " + autoMesAntic.modelo);
